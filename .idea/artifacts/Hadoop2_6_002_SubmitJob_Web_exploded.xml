@@ -1,0 +1,13 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="Hadoop2.6_002_SubmitJob:Web exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/Hadoop2_6_002_SubmitJob_Web_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Hadoop2.6_002_SubmitJob/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="Hadoop2.6_002_SubmitJob" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

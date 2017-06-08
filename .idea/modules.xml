@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/../tbook/Hadoop2.6_002_SubmitJob/Hadoop2.6_002_SubmitJob.iml" filepath="$PROJECT_DIR$/../tbook/Hadoop2.6_002_SubmitJob/Hadoop2.6_002_SubmitJob.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WebCollector/WebCollector/WebCollector.iml" filepath="$PROJECT_DIR$/WebCollector/WebCollector/WebCollector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/framestudy.iml" filepath="$PROJECT_DIR$/framestudy.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hadooptest/hadooptest.iml" filepath="$PROJECT_DIR$/hadooptest/hadooptest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../thread_study/JavaTutorial/javaturorial.iml" filepath="$PROJECT_DIR$/../thread_study/JavaTutorial/javaturorial.iml" />
+    </modules>
+  </component>
+</project>

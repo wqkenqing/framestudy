@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <!-- 引入外部的配置文件 -->
+    <properties resource="jdbc.properties"/>
+    <settings>
+        <!-- 开启驼峰自动映射 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+    </settings>
+    <typeAliases>
+        <!-- 设置别名 -->
+        <typeAlias type="com.mybaits.model.Article" alias="article"/>
+    </typeAliases>
+    <!-- 指定环境 -->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.driver}"/>
+                <property name="url" value="${jdbc.url}"/>
+                <property name="username" value="${jdbc.username}"/>
+                <property name="password" value="${jdbc.password}"/>
+            </dataSource>
+        </environment>
+        <!--
+        <environment id="test">
+            <transactionManager type="JDBC" />
+            <dataSource type="POOLED">
+                <property name="driver" value="${jdbc.test.driver}" />
+                <property name="url" value="${jdbc.test.url}" />
+                <property name="username" value="${jdbc.test.username}" />
+                <property name="password" value="${jdbc.test.password}" />
+            </dataSource>
+        </environment>
+         -->
+    </environments>
+    <mappers>
+        <!-- 指定UserMapper.xml  -->
+        <mapper resource="mybaits/Article.xml"/>
+        <!-- <mapper resource="UserMapper2.xml" /> -->
+        <!--  <mapper class="com.j1.mybatis.Iuser"/> -->
+        <!--<mapper class="com.mybaits.dao.IArticleDao"></mapper>-->
+        <!-- 配置掃描包 -->
+        <package name="com.mybaits.dao"/>
+    </mappers>
+</configuration>

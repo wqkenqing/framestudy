@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="framestudy:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/framestudy_jar</output-path>
+    <root id="archive" name="framestudy.jar">
+      <element id="module-output" name="framestudy" />
+      <element id="module-output" name="WebCollector" />
+      <element id="library" level="project" name="Maven: javax.mail:mail:1.4.7" />
+    </root>
+  </artifact>
+</component>
